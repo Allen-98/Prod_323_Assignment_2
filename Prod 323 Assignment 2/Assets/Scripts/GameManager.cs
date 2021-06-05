@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
 
     public void AddSoldier()
     {
-        if (money > 100)
+        if (money >= 100)
         {
             money -= 100;
             resourceText.text = "Resource: $ " + money;
