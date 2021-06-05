@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public Text resourceText;
     public GameObject soldier;
     public Transform bornPoint;
+    public ArmyManager _am;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +32,7 @@ public class GameManager : MonoBehaviour
             money -= 100;
             resourceText.text = "Resource: $ " + money;
             Instantiate(soldier, bornPoint);
+            _am.UpdateArmy();
 
         } else
         {
