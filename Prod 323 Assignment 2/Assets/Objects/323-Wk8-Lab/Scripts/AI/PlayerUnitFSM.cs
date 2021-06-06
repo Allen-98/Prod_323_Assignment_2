@@ -11,7 +11,8 @@ public class PlayerUnitFSM : MonoBehaviour
     [SerializeField] GameObject _bloodParticles;
 
     Vector3 _posEnemy;
-    Health _target;
+    //Health _target;
+    EnemyTank _target;
     Transform _currentTarget;
 
     bool _isInRange = false;
@@ -130,7 +131,7 @@ public class PlayerUnitFSM : MonoBehaviour
     public void EnemyNear()
     {
         if(_target != null) { return; }
-        hits = Physics.SphereCastAll(this.transform.position, _maxChaseDistance, this.transform.forward, 4f, enemylayerMask);
+        hits = Physics.SphereCastAll(this.transform.position, _maxChaseDistance, this.transform.forward, 5f, enemylayerMask);
         
         if(hits.Length == 0)
         {
@@ -195,7 +196,8 @@ public class PlayerUnitFSM : MonoBehaviour
     {
         if (enemy != null)
         {
-            _target = enemy.GetComponent<Health>();
+            //_target = enemy.GetComponent<Health>();
+            _target = enemy.GetComponent<EnemyTank>();
         }
     }
 

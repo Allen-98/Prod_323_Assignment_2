@@ -8,7 +8,7 @@ public class ArmyManager : MonoBehaviour
     //private List<Warrior> _currentArmySelected = new List<Warrior>();
     private List<AIController> _enemyList = new List<AIController>();
 
-    bool _isUnderAttack = false;
+    bool _isUnderAttack;
 
 
     // Start is called before the first frame update

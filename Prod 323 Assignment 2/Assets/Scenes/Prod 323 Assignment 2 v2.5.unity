@@ -14495,7 +14495,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1697031495}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee1d19adb0e46114aaa0d1d5698bd740, type: 3}
+  m_Script: {fileID: 11500000, guid: 8c0fcc7e4f6c8d5439411af104ce4e7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _healthBar: {fileID: 1736512993}
@@ -14533,38 +14533,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 6.2197304, y: 1.0530436, z: 4.262516}
   m_Center: {x: -0.18121338, y: 0.5231291, z: -0.12064552}
---- !u!114 &1697031502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1697031495}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7009c0df6462c9479703a89a1ad73df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _weaponRange: 40
-  _target: {fileID: 0}
-  _bloodParticles: {fileID: 9159782287453355235, guid: 2111fad2d694b264daadd91731cd7af3, type: 3}
-  _timeBetweenAttacks: 2
-  damage: 15
---- !u!114 &1697031503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1697031495}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da2d855583796224ba4cc0cf7c348c67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _armyManager: {fileID: 0}
-  _chaseDistance: 5
-  personalLastSighting: {x: 0, y: 0, z: 0}
 --- !u!114 &1697031504
 MonoBehaviour:
   m_ObjectHideFlags: 0
