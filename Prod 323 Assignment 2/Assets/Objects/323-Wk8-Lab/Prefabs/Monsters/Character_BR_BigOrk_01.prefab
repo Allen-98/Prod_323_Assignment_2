@@ -1882,14 +1882,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acecb3f81daa89b40901c365043e10e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _weaponRange: 2
+  _weaponRange: 30
   _maxChaseDistance: 5
-  _fireParticles: {fileID: 0}
+  _fireParticles: {fileID: 6798948863778341274, guid: 332e1eeabbe4e4243a5e007c40d40cb6, type: 3}
   _bloodParticles: {fileID: 3439214391049491330}
   _armyManager: {fileID: 0}
   _timeBetweenAttacks: 5
-  damage: 5
-  _fireDamage: 1
+  damage: 10
+  _fireDamage: 15
 --- !u!195 &524863214
 NavMeshAgent:
   m_ObjectHideFlags: 0
