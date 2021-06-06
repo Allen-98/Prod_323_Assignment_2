@@ -1882,8 +1882,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acecb3f81daa89b40901c365043e10e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _weaponRange: 30
-  _maxChaseDistance: 5
+  _weaponRange: 35
+  _maxChaseDistance: 10
   _fireParticles: {fileID: 6798948863778341274, guid: 332e1eeabbe4e4243a5e007c40d40cb6, type: 3}
   _bloodParticles: {fileID: 3439214391049491330}
   _armyManager: {fileID: 0}
