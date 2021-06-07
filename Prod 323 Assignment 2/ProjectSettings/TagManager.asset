@@ -7,6 +7,10 @@ TagManager:
   - Army
   - Terrain
   - Enemy
+  - EnemyManager
+  - LaserEnemy
+  - Laser
+  - beamer
   layers:
   - Default
   - TransparentFX
