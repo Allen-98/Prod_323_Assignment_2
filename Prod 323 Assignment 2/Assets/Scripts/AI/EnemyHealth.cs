@@ -58,7 +58,7 @@ public class EnemyHealth : MonoBehaviour
         gameObject.tag = "Untagged";
 
         Instantiate(explosion, gameObject.transform.position, gameObject.transform.rotation);
-        Destroy(gameObject, 1f);
+        Destroy(gameObject, 0.5f);
 
 
     }
