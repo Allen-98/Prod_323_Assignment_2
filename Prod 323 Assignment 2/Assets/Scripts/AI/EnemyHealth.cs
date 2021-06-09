@@ -21,7 +21,6 @@ public class EnemyHealth : MonoBehaviour
 
 
     bool _isDead = false;
-    bool _spawn = false;
 
     public bool isDead { get { return _isDead; } }
 

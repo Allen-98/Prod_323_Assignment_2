@@ -15,10 +15,13 @@ public class TurretOperation : MonoBehaviour
     [Range(0.1f, 5f)]
     public float fireInterval = 1f;
 
+    [SerializeField] ArmyManager armyManager;
+
     private GameObject _army;
     private float timer = 0;
+    private bool turretOut = false;
 
-
+    private List<GameObject> armyList = new List<GameObject>();
 
     private void OnTriggerEnter(Collider other)
     {
@@ -26,6 +29,7 @@ public class TurretOperation : MonoBehaviour
         {
             turretAnim.Play("Turret_v1_activation");
             _army = other.gameObject;
+            turretOut = true;
         }
     }
 
@@ -37,9 +41,46 @@ public class TurretOperation : MonoBehaviour
         }
     }
 
+    private void ChooseTarget()
+    {
+        _army = null; 
+
+        for (int i = 0; i < armyList.Count; i++)
+        {
+            Health armyHealth = armyList[i].GetComponent<Health>();
+            float currentHealth = armyHealth.GetHealth();
+            if (currentHealth > 0)
+            {
+                _army = armyList[i];
+                break;
+            }
+        }
+
+    }
+
+    public void UpdateArmyList()
+    {
+        armyList.Clear();
+        _army = null;
+        GameObject[] warriors = GameObject.FindGameObjectsWithTag("Army");
+
+        foreach (GameObject warrior in warriors)
+        {
+            armyList.Add(warrior);
+        }
+
+        ChooseTarget();
+    }
+
+
 
     private void Update()
     {
+
+
+
+
+
         if (_army != null)
         {
             FaceArmy();
@@ -54,6 +95,14 @@ public class TurretOperation : MonoBehaviour
                 timer += Time.deltaTime;
             }
 
+        }
+        else
+        {
+            if (turretOut)
+            {
+                turretAnim.Play("Turret_v1_deactivation");
+                turretOut = false;
+            }
         }
 
 

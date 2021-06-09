@@ -19,9 +19,8 @@ public class Health : MonoBehaviour
     [SerializeField] float laserDamage = 20f;
 
     Animator _anim;
-
-
     bool _isDead = false;
+    private TurretOperation _to;
 
     public bool isDead { get { return _isDead; } }
 
@@ -45,6 +44,7 @@ public class Health : MonoBehaviour
         _camera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         _armyManager = GameObject.Find("Army Manager").GetComponent<ArmyManager>();
         _anim = GetComponent<Animator>();
+        _to = GameObject.Find("Enemy Tank").GetComponent<TurretOperation>();
     }
 
     public void TakeDamage(float damage)
@@ -90,6 +90,10 @@ public class Health : MonoBehaviour
         }
     }
 
+    public float GetHealth()
+    {
+        return _health;
+    }
 
 
     // Update is called once per frame
@@ -101,6 +105,7 @@ public class Health : MonoBehaviour
         if (_health <= 0 && !_isDead)
         {
             Die();
+            _to.UpdateArmyList();
         }
     }
 }

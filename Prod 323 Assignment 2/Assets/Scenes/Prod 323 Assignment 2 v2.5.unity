@@ -14526,7 +14526,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012008116756, guid: 528af406eaf082244ae68b755f89d3d3, type: 3}
       propertyPath: m_LocalScale.y
-      value: 8.1048
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4000012008116756, guid: 528af406eaf082244ae68b755f89d3d3, type: 3}
       propertyPath: m_LocalScale.z
@@ -14595,7 +14595,7 @@ MonoBehaviour:
   _canvasBar: {fileID: 2036784716}
   _armyManager: {fileID: 0}
   _maxHealth: 500
-  _health: 200
+  _health: 500
   _camera: {fileID: 0}
   explosion: {fileID: 100004, guid: bd5a7ae3e8bd4c8499f69e8e45138021, type: 3}
   winText: {fileID: 1755723637}
@@ -14631,8 +14631,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 12.359892, y: 1.0530436, z: 10.010851}
-  m_Center: {x: -0.44232273, y: 0.5231291, z: 0.3616457}
+  m_Size: {x: 10, y: 1, z: 10}
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!208 &1697031502
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -14669,6 +14669,7 @@ MonoBehaviour:
   speed: 50
   attackDist: 40
   fireInterval: 1
+  armyManager: {fileID: 0}
 --- !u!1 &1724420589
 GameObject:
   m_ObjectHideFlags: 0
@@ -16574,7 +16575,7 @@ MonoBehaviour:
   alertText: {fileID: 2029601857}
   maxResource: 2000
   miningSpeed: 80
-  maxHealth: 500
+  maxHealth: 1000
   isSafe: 1
   gm: {fileID: 910797078}
 --- !u!1 &1000013684223159
