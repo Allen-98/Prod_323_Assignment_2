@@ -17,7 +17,7 @@ public class EnemyHealth : MonoBehaviour
 
     [SerializeField] Camera _camera;
     [SerializeField] GameObject explosion;
-
+    [SerializeField] GameObject winText;
 
 
     bool _isDead = false;
@@ -59,9 +59,10 @@ public class EnemyHealth : MonoBehaviour
 
         gameObject.tag = "Untagged";
 
-        Instantiate(explosion, gameObject.transform.position, gameObject.transform.rotation);
-        Destroy(gameObject, 0.5f);
+        Instantiate(explosion, new Vector3(gameObject.transform.position.x, (gameObject.transform.position.y + 5), gameObject.transform.position.z), gameObject.transform.rotation);
+        Destroy(gameObject);
 
+        winText.SetActive(true);
 
     }
 

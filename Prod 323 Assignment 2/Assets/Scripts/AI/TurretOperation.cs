@@ -66,14 +66,6 @@ public class TurretOperation : MonoBehaviour
 
     void Attack()
     {
-        //Vector3 direction = _army.transform.position - transform.position;
-
-        //float distance = direction.magnitude;
-        //if (distance < attackDist)
-        //{
-        //    Fire(direction.normalized);
-        //    return;
-        //}
 
         GameObject bullet = Instantiate(laserBeam, beamer_L.transform.position, beamer_L.transform.rotation) as GameObject;
         bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * speed;
@@ -81,16 +73,7 @@ public class TurretOperation : MonoBehaviour
 
     }
 
-    //void Fire(Vector3 v)
-    //{
-    //    var transform = this.transform;
-    //    var laserR = Instantiate(laserBeam, beamer_L.transform.position, Quaternion.identity);
-    //    Quaternion rot = Quaternion.identity;
-    //    rot.eulerAngles = new Vector3(0, 0, 90);
-    //    laserR.transform.rotation = transform.rotation * rot;
-    //    var laserL = Instantiate(laserBeam, beamer_R.transform.position, Quaternion.identity);
-    //    laserL.transform.rotation = transform.rotation * rot;
 
-    //}
+
 
 }
