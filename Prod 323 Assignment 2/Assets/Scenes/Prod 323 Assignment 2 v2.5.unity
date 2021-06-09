@@ -11463,11 +11463,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.2701917, y: 3.9848354, z: 8.621319}
   m_Center: {x: -2.0358233, y: 1.4924167, z: -0.50874627}
---- !u!1 &782565786 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2249960892995720548, guid: 007a0996dbbf097438401d02314f33d1, type: 3}
-  m_PrefabInstance: {fileID: 1226482606}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &819068537
 GameObject:
   m_ObjectHideFlags: 0
@@ -14583,12 +14578,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1000013297569420, guid: 528af406eaf082244ae68b755f89d3d3, type: 3}
   m_PrefabInstance: {fileID: 1649779881}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1697031498 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4000012008116756, guid: 528af406eaf082244ae68b755f89d3d3, type: 3}
-  m_PrefabInstance: {fileID: 1649779881}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1697031499
+--- !u!114 &1697031496
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -14601,12 +14591,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _healthBar: {fileID: 1736512993}
-  _canvasBar: {fileID: 782565786}
+  _canvasBar: {fileID: 2036784716}
   _armyManager: {fileID: 0}
   _maxHealth: 200
   _health: 200
   _camera: {fileID: 0}
   explosion: {fileID: 100004, guid: bd5a7ae3e8bd4c8499f69e8e45138021, type: 3}
+--- !u!4 &1697031498 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4000012008116756, guid: 528af406eaf082244ae68b755f89d3d3, type: 3}
+  m_PrefabInstance: {fileID: 1649779881}
+  m_PrefabAsset: {fileID: 0}
 --- !u!54 &1697031500
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14636,6 +14631,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 12.359892, y: 1.0530436, z: 10.010851}
   m_Center: {x: -0.44232273, y: 0.5231291, z: 0.3616457}
+--- !u!208 &1697031502
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697031495}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.66, y: 0.527, z: 1.085}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.001, y: 0.523, z: 0.002}
+  m_TimeToStationary: 0.5
 --- !u!114 &1697031504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15754,6 +15765,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2029601855}
   m_CullTransparentMesh: 0
+--- !u!1 &2036784716 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7172838373277801845, guid: 007a0996dbbf097438401d02314f33d1, type: 3}
+  m_PrefabInstance: {fileID: 1226482606}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2060371945
 GameObject:
   m_ObjectHideFlags: 0
@@ -16203,7 +16219,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &2127167076
 BoxCollider:
   m_ObjectHideFlags: 0

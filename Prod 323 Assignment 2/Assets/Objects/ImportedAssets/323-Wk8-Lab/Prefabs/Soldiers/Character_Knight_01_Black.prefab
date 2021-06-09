@@ -1142,7 +1142,7 @@ Transform:
   m_GameObject: {fileID: 8360239212698050336}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 8360239212698337654}
   - {fileID: 8360239212698325384}
@@ -1206,6 +1206,7 @@ MonoBehaviour:
   _maxHealth: 50
   _health: 50
   _camera: {fileID: 0}
+  laserDamage: 20
 --- !u!195 &1028729435974566958
 NavMeshAgent:
   m_ObjectHideFlags: 0

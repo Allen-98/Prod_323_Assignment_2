@@ -21,7 +21,7 @@ public class Enemy : MonoBehaviour
 
     [SerializeField] int damage = 5;
     bool _isAttacking = false;
-    Health _thisHealth;
+    EnemyHealth _thisHealth;
 
     bool _isDead = false;
 
@@ -32,7 +32,7 @@ public class Enemy : MonoBehaviour
     {
 
         _ai = GetComponent<AIController>();
-        _thisHealth = GetComponent<Health>();
+        _thisHealth = GetComponent<EnemyHealth>();
         if(_thisHealth == null)
         {
             Debug.Log("NOT FOUND");

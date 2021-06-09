@@ -18,7 +18,10 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] Camera _camera;
     [SerializeField] GameObject explosion;
 
+
+
     bool _isDead = false;
+    bool _spawn = false;
 
     public bool isDead { get { return _isDead; } }
 
@@ -27,7 +30,6 @@ public class EnemyHealth : MonoBehaviour
         float fill = _health / _maxHealth;
         if (_healthBar != null)
         {
-
             _healthBar.fillAmount = fill;
         }
     }

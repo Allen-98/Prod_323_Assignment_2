@@ -20,7 +20,7 @@ public class AIController : MonoBehaviour
     bool _isDead;
     protected bool _updateAnim = false;
 
-    Health _thisHealth;
+    EnemyHealth _thisHealth;
 
     private bool _playerInSight;
     public bool WarriorInSight { get { return _playerInSight; } }
@@ -31,7 +31,7 @@ public class AIController : MonoBehaviour
         _armyManager = GameObject.Find("Army Manager").GetComponent<ArmyManager>();
         _navMeshAgent = GetComponent<NavMeshAgent>();
         _anim = GetComponent<Animator>();
-        _thisHealth = GetComponent<Health>();
+        _thisHealth = GetComponent<EnemyHealth>();
     }
 
     // Update is called once per frame
