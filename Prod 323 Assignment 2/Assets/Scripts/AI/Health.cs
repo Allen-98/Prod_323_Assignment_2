@@ -81,13 +81,15 @@ public class Health : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter(Collider other)
+
+    private void OnCollisionEnter(Collision collision)
     {
-        if(other.gameObject.tag == "LaserEnemy")
+        if (collision.gameObject.tag == "LaserEnemy")
         {
             TakeDamage(laserDamage);
         }
     }
+
 
 
     // Update is called once per frame

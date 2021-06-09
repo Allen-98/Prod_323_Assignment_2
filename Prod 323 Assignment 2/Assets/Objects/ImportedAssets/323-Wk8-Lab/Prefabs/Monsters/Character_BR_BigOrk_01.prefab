@@ -1851,7 +1851,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7704994770297842081}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.4
   m_Height: 1.9822288
@@ -1930,6 +1930,7 @@ MonoBehaviour:
   _maxHealth: 100
   _health: 100
   _camera: {fileID: 0}
+  laserDamage: 20
 --- !u!54 &4614095335376965480
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1945,7 +1946,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!1 &7705010411556281433
 GameObject:
   m_ObjectHideFlags: 0
