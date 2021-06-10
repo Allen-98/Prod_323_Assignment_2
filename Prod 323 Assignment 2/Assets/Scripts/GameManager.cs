@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         Time.timeScale = 0f;
+        startUI.SetActive(true);
     }
 
     // Update is called once per frame
@@ -36,6 +37,7 @@ public class GameManager : MonoBehaviour
     public void RestartGame()
     {
         SceneManager.LoadScene(0);
+        
     }
 
 
