@@ -14888,7 +14888,7 @@ MonoBehaviour:
   _healthBar: {fileID: 1736512993}
   _canvasBar: {fileID: 2036784716}
   _armyManager: {fileID: 0}
-  _maxHealth: 50
+  _maxHealth: 500
   _health: 500
   _camera: {fileID: 0}
   explosion: {fileID: 100004, guid: bd5a7ae3e8bd4c8499f69e8e45138021, type: 3}
